@@ -43,7 +43,7 @@ function openPopup() {
     }
     flag = !flag
     bgBlur.innerHTML = `
-        <div onclick="dayan(event)" class="pop-up w-[600px] px-[20px] py-[10px] min-h-[200px] relative bg-white">
+        <div onclick="dayan(event)" class="pop-up w-full h-full md:w-[650px] px-[20px] py-[10px] min-h-[200px] relative bg-white">
                 <div class="flex justify-between">
                     <p class="text-[23px] font-bold">Sebet</p>
                     <p class="grid cursor-pointer font-bold" onclick="openPopup()" >Bagla X</p>
