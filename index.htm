@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="src/output.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="src/output.css" rel="stylesheet"> -->
     <style>
         .lists {
             overflow-y: hidden;
@@ -50,9 +51,10 @@
                     <div class="px-6 font-bold">
                         Girish/Qeydiyyat
                     </div>
-                    <div onclick="openPopup()" class="text-center cursor-pointer font-bold font-sans px-4 whitespace-nowrap">
+                    <div onclick="openPopup()"
+                        class="text-center cursor-pointer font-bold font-sans px-4 whitespace-nowrap">
                         <i class="fa-solid fa-basket-shopping text-[25px]"></i>
-                        <p>0 m</p>
+                        <p id="deskTotal">0 m</p>
                     </div>
                 </div>
 
@@ -68,24 +70,15 @@
                     <i class="fa-solid fa-user text-[23px]"></i>
                     <p>Giriş</p>
                 </div>
-                <div onclick="openPopup()" class=" px-4 w-[20%] text-center font-bold font-sans whitespace-nowrap">
+                <div onclick="openPopup()" class="px-4 cursor-pointer w-[20%] text-center font-bold font-sans whitespace-nowrap">
                     <i class="fa-solid fa-basket-shopping text-[25px]"></i>
-                    <p>0 m</p>
+                    <p id="mobTotal">0 m</p>
                 </div>
             </div>
         </div>
         <div class="bg-[#ad0f14] font-bold lg:p-3 flex text-[18px] xl:text-[20px] text-white w-full ">
-            <ul
-                class="lists flex md:justify-center xl:flex-wrap xl:ml-[200px] w-full p-[18px] lg:gap-4 font-bold uppercase gap-2 font-sans ">
-                <li><a href="">Kampaniyalar</a></li>
-                <li><a href="">Papadias</a></li>
-                <li><a href="">Pizza</a></li>
-                <li><a href="">Qəlyanaltı</a></li>
-                <li><a href="">Salat</a></li>
-                <li><a href="">Pasta</a></li>
-                <li><a href="">İçki</a></li>
-                <li><a href="">Desert</a></li>
-                <li><a href="">Sous</a></li>
+            <ul id="menu"
+                class="lists flex md:justify-center xl:flex-wrap xl:ml-[200px] w-full p-[18px] lg:gap-4 font-bold uppercase gap-2 font-sans ">                
             </ul>
             <div class="ball-count hidden xl:flex whitespace-nowrap items-center xl:pr-20">
                 <p>0 bal </p>
@@ -94,47 +87,11 @@
         </div>
     </header>
     <main>
-        <div class="promo-c lg:mt-10 max-w-[95%] m-auto mb-[30px]">
-            <div class="bg-[#f1f1f1] flex justify-center items-center w-full h-full py-[18px] ">
-                <div class="promo-code text-[32px] font-bold hidden lg:flex">
-                    <p class="text-[#363636]">Promo kodunuz var?
-                        <span class="text-[#0f9675]">Endirimdən istifadə edin! </span>
-                    </p>
-                </div>
-                <div class="inp-code flex ml-[40px] ">
-                    <input type="text" name="" id=""
-                        class="border border-[#0f9675] text-[18px] font-bold  bg-white outline-none rounded-md px-[10px] w-full h-[39px]"
-                        placeholder="Promo kodu daxil edin">
-                    <button
-                        class="text-[18px] h-[39px] rounded-md font-bold text-white bg-[#0f9675] mx-2 px-[21px] ">OK</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="max-w-[95%] m-auto">
-            <div class="bg-[#f1f1f1] py-[14px] mb-[19px]">
-                <ul class="md:text-[23px] text-[#363636] whitespace-nowrap md:ml-[20px] gap-[10px] md:gap-[19px] font-bold flex flex-wrap">
-                    <li><a href="">Hamısı</a></li>
-                    <li><a href="">Toyuqlu</a></li>
-                    <li><a href="">Et ile</a></li>
-                    <li><a href="">Vegetarian</a></li>
-                    <li><a href="">Acili</a></li>
-                </ul>
-            </div>
-
-            <div id="cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-               
-            </div>
-        </div>
-
-        <div id="bgBlur" onclick="openPopup()" class="bg-[#00000038] hidden fixed place-items-center inset-0">
-        </div>
-        <div id="bgBlur2" onclick="openPizza()" class="bg-[#00000038] text-center hidden fixed place-items-center inset-0">
-            
-        </div>
-
+     <!-- SLIDER YAZ -->
     </main>
-    <script src="script.js"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
