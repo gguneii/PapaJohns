@@ -11,7 +11,7 @@ const menu = document.getElementById('menu')
 function addMenu(){
     category.map(item =>{
         menu.innerHTML +=`
-        <li><a href="/pages/categories.htm?category=${item.slug}">${item.category}</a></li>
+        <li class="hover:text-[#d6878a]"><a href="/pages/categories.htm?category=${item.slug}">${item.category}</a></li>
         `
     })
 }
