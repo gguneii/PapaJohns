@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/stylee.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link href="src/output.css" rel="stylesheet"> -->
     <style>
         .lists {
@@ -70,7 +72,8 @@
                     <i class="fa-solid fa-user text-[23px]"></i>
                     <p>Giriş</p>
                 </div>
-                <div onclick="openPopup()" class="px-4 cursor-pointer w-[20%] text-center font-bold font-sans whitespace-nowrap">
+                <div onclick="openPopup()"
+                    class="px-4 cursor-pointer w-[20%] text-center font-bold font-sans whitespace-nowrap">
                     <i class="fa-solid fa-basket-shopping text-[25px]"></i>
                     <p id="mobTotal">0 m</p>
                 </div>
@@ -78,7 +81,7 @@
         </div>
         <div class="bg-[#ad0f14] font-bold lg:p-3 flex text-[18px] xl:text-[20px] text-white w-full ">
             <ul id="menu"
-                class="lists flex md:justify-center xl:flex-wrap xl:ml-[200px] w-full p-[18px] lg:gap-4 font-bold uppercase gap-2 font-sans ">                
+                class="lists flex md:justify-center xl:flex-wrap xl:ml-[200px] w-full p-[18px] lg:gap-4 font-bold uppercase gap-2 font-sans ">
             </ul>
             <div class="ball-count hidden xl:flex whitespace-nowrap items-center xl:pr-20">
                 <p>0 bal </p>
@@ -86,10 +89,87 @@
             </div>
         </div>
     </header>
-    <main>
-     <!-- SLIDER YAZ -->
+    <main class="bg-white min-h-[60vh]">
+        <!-- SLIDER YAZ -->
+        <div class="promo-c lg:mt-6  max-w-[95%] m-auto mb-[30px]">
+            <div class="bg-[#f1f1f1] flex justify-center items-center w-full h-full py-[18px] overflow-hidden ">
+                <div class="promo-code text-[32px] font-bold hidden lg:flex">
+                    <p class="text-[#363636]">Promo kodunuz var?
+                        <span class="text-[#0f9675]">Endirimdən istifadə edin! </span>
+                    </p>
+                </div>
+                <div class="inp-code flex ml-[40px] ">
+                    <input type="text" name="" id=""
+                        class="border border-[#0f9675] text-[18px] font-bold bg-white outline-none rounded-md px-[10px] w-full h-[39px]"
+                        placeholder="Promo kodu daxil edin">
+                    <button
+                        class="text-[18px] h-[39px] rounded-md font-bold text-white bg-[#0f9675] mx-2 px-[21px] ">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide "><img src="img/slider1.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider2.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider3.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider4.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider5.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider6.jpg" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider7.png" alt="slider"></div>
+                <div class="swiper-slide"><img src="img/slider8.jpg" alt="slider"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
-
+    <footer class="bg-[#AD0F14]">
+        <div class="flex mt-5 flex-col md:flex-row justify-between items-center p-6 dark:divide-gray-600 ">
+            <div class="whitespace-nowrap mx-4 mb-4 md:mb-0">
+                <span class="text-[12px] md:text-[19px] font-bold text-white">© PJA 2024</span>
+            </div>  
+    
+            <ul class="lg:text-[18px] text-[10px] sm:text-[12px] md:text-[14px] items-center flex md:flex-row flex-col text-center flex-wrap justify-center gap-2 md:gap-3 lg:gap-5 font-bold text-white">
+                <li>
+                    <a href="#" class="hover:dark:text-violet-600">Haqqımızda</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="#" class="hover:dark:text-violet-600">Sual və Cavab</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:dark:text-violet-600">Karyera</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:dark:text-violet-600">Xəmir</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="#" class="hover:dark:text-violet-600">Papa Talk - Şərtlər və Qaydalar</a>
+                </li>
+            </ul>
+    
+            <div class="flex items-center justify-center gap-4 mt-4 md:mt-0">
+                <div class="w-[150px] sm:w-[180px] md:w-[200px]">
+                    <img src="img/footer-images-az-AZ.png" alt="img" class="border-r-2 w-full border-r-[#eee]">
+                </div>
+                <div class="flex items-center justify-center gap-4 sm:gap-6 md:gap-10">
+                    <i class="fa-brands fa-facebook-f text-white text-[16px] sm:text-[18px] md:text-[22px]"></i>
+                    <i class="fa-brands fa-twitter text-white text-[16px] sm:text-[18px] md:text-[22px]"></i>
+                    <i class="fa-brands fa-instagram text-white text-[16px] sm:text-[18px] md:text-[22px]"></i>
+                    <img src="img/tripadvisor (1).png" class="w-[20px] h-[20px] sm:w-[25px] sm:h-[25px] md:w-[30px] md:h-[30px] object-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
 </body>
