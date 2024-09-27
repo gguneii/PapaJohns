@@ -9,13 +9,13 @@ function openPizza(id, img, name, price) {
     }
 
     bgBlur2.innerHTML = `
-        <div onclick="dayan(event)" class=" bg-white w-[400px] h-auto">
+        <div onclick="dayan(event)" class=" bg-white min-w-[300px] h-auto">
             <div onclick="openPizza()" class="text-right cursor-pointer">
-                    <span>Bagla X</span>
+                    <span class="mx-2">X</span>
             </div>
-            <div class="w-[320px] m-auto h-auto">
+            <div class="w-[220px] m-auto h-auto">
                 <div class="max-w-full">
-                    <img src="${img ? img : 'img/az.png'}" alt="">
+                    <img src="${img ? img : '../img/az.png'}" alt="">
                 </div>
                 <div class="title font-bold text-[20px] my-3">${name} </div>
 
